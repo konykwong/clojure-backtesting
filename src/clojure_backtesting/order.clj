@@ -20,7 +20,7 @@
 	)
 )
 
-(defn search_in_order
+(defn search_date
 	"This function tries to retrieve the matching entry from the dataset."
 	[date tic]
 	;;date e.g. "DD/MM?YYYY"
@@ -45,6 +45,33 @@
 		)
 	)
 )
+
+
+
+(defn search_in_ord
+	"This function turns the order processed date"
+[date tic]
+;;date e.g. "DD/MM?YYYY"
+;;tic e.g. "AAPL"
+;;return [false 0 0 0] if no match
+;;return [true date price reference] otherwise
+
+(let [[match price reference] (search_in_order date tic)]
+	;;(let [[match price reference] [true "10" 348]]
+	(if match
+		(do 
+	
+	
+	
+	
+	
+	
+	)
+
+
+
+
+
 
 ;; Create initial portfolio with cash only (User input thei initial-capital)
 (defn init_portfolio
